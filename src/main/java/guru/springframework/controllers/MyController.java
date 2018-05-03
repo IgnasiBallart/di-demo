@@ -1,7 +1,13 @@
 package guru.springframework.controllers;
 
-/**
- * Created by iballart on 3/05/18.
- */
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class MyController {
+
+    public String hello(){
+        System.out.println("Hello!!!");
+
+        return "foo";
+    }
 }
